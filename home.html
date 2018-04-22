@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        Bike Kart
+    </title>
+
+    <meta name="keywords" content="">
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Nova+Square" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+<div class="wait overlay">
+    <div class="loader"></div>
+</div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">   
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+                    <span class="sr-only">navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="home.html" class="navbar-brand" style="font-size:40px; font-family: 'Faster One', cursive; ">Bike Kart</a>
+            </div>
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span> Product</a></li>
+                <li><a href="parts.php"><span class="glyphicon glyphicon-modal-window"></span> Parts</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search" id="search">
+                </div>
+                <button type="submit" class="btn btn-primary" id="search_btn"><span class="glyphicon glyphicon-search"></span></button>
+             </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>Cart<span class="badge">0</span></a>
+                    <div class="dropdown-menu" style="width:400px;">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-md-3">Sl.No</div>
+                                    <div class="col-md-3">Product Image</div>
+                                    <div class="col-md-3">Product Name</div>
+                                    <div class="col-md-3">Price in Rs.</div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="cart_product">
+                                <!--<div class="row">
+                                    <div class="col-md-3">Sl.No</div>
+                                    <div class="col-md-3">Product Image</div>
+                                    <div class="col-md-3">Product Name</div>
+                                    <div class="col-md-3">Price in $.</div>
+                                </div>-->
+                                </div>
+                            </div>
+                            <div class="panel-footer"></div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>SignIn</a>
+                    <ul class="dropdown-menu">
+                        <div style="width:300px;">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Login</div>
+                                <div class="panel-heading">
+                                    <form onsubmit="return false" id="login">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" required/>
+                                        <label for="email">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password" required/>
+                                        <p><br/></p>
+                                        <a href="#" style="color:white; list-style:none;">Forgotten Password</a><input type="submit" class="btn btn-success" style="float:right;">
+                                        <a href="customer_registration.php?register=1" style="color:white; list-style:none;"><br>Create New Account</br></a>
+                                    </form>
+                                </div>
+                                <div class="panel-footer" id="e_msg"></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>  
+
+
+    <div id="all">
+
+        <div id="content">
+
+            <div class="container">
+                <div class="col-md-12">
+                    <div id="main-slider">
+                        <div class="item">
+                            <img src="img/slide01.jpg" alt="" class="img-responsive">
+                            <a href="http://bmw-motorrad.in/"></a>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/slide02.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/slide03.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/slide04.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- /#main-slider -->
+                </div>
+            </div>
+
+            <!-- *** ADVANTAGES HOMEPAGE ***
+ _________________________________________________________ -->
+            <div id="advantages">
+
+                <div class="container">
+                    <div class="same-height-row">
+                        <div class="col-sm-4">
+                            <div class="box same-height clickable">
+                                <div class="icon"><i class="fa fa-heart"></i>
+                                </div>
+
+                                <h3><a href="https://bicyclehabitat.com/how-to/a-simple-bike-maintenance-chart-pg366.htm">We love our customers</a></h3>
+                                <p>We are known to provide best possible service ever</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="box same-height clickable">
+                                <div class="icon"><i class="fa fa-tags"></i>
+                                </div>
+
+                                <h3><a href="https://adaalo.com/blog/top-upcoming-bikes-india-2018/">Best prices</a></h3>
+                                <p>"Price is what you pay. Value is what you get." - Warren Buffett</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="box same-height clickable">
+                                <div class="icon"><i class="fa fa-thumbs-up"></i>
+                                </div>
+
+                                <h3><a href="https://www.nlcindia.com/tenders/format_gw.pdf">100% satisfaction guaranteed</a></h3>
+                                <p>Beneficial returns on everything you purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.container -->
+
+            </div>
+            <!-- /#advantages -->
+
+            <!-- *** ADVANTAGES END *** -->
+
+            <!-- *** HOT PRODUCT SLIDESHOW ***
+ _________________________________________________________ -->
+            <div id="hot">
+
+                <div class="box">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>Hot this week</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="product-slider">
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="https://www.ktm.com/naked-bike/">
+                                                <img src="img/2018_ktm_790_duke-1920x1080.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="https://www.ktm.com/naked-bike/">
+                                                <img src="img/2018_ktm_790_duke-1920x1080.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/blog-avatar2.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">ktm 790 dukee</a></h3>
+                                    <p class="price">Rs 7,80,000</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r15.html">
+                                                <img src="img/2018_yamaha_yzf_r1_4k-1920x1080.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r15.html">
+                                                <img src="img/2018_yamaha_yzf_r1_4k-1920x1080.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/2018_yamaha_yzf_r1_4k-1920x1080.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r15.html">Yamaha yzf r1</a></h3>
+                                    <p class="price">Rs 4,50,000</p>
+                                </div>
+                                <!-- /.text -->
+
+                                
+                                <!-- /.ribbon -->
+
+                                <div class="ribbon new" style="max-height:100px">
+                                    <div class="theribbon">NEW</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
+
+                                
+                                <!-- /.ribbon -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="https://www.yamahamotogp.com/yamaha-yzr-m1">
+                                                <img src="img/2018_yamaha_yzr_m1_movistar_4k-1920x1080.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="https://www.yamahamotogp.com/yamaha-yzr-m1">
+                                                <img src="img/2018_yamaha_yzr_m1_movistar_4k-1920x1080.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://www.yamahamotogp.com/yamaha-yzr-m1" class="invisible">
+                                    <img src="img/2018_yamaha_yzr_m1_movistar_4k-1920x1080.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="https://www.yamahamotogp.com/yamaha-yzr-m1">Yamaha yzr m1 movistar</a></h3>
+                                    <p class="price">Rs 6,35,000</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r1.html">
+                                                <img src="img/pic02.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r1.html">
+                                                <img src="img/pic02.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r1.html" class="invisible">
+                                    <img src="img/pic02.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r1.html">Yamaha R1</a></h3>
+                                    <p class="price">Rs 4,65,000</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                      
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="https://royalenfield.com/">
+                                                <img src="img/blog-avatar2.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="https://royalenfield.com/">
+                                                <img src="img/blog-avatar2.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/blog-avatar2.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="https://royalenfield.com/">Royal Enfield</a></h3>
+                                    <p class="price">Rs 6,35,000</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="http://www.yamaha-motor-india.com/motorcycle-yzf-r1.html">
+                                                <img src="img/banner.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="https://www.bajajauto.com/motor-bikes/pulsar-220f">
+                                                <img src="img/banner.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="http://www.bikecomparos.com/2015/12/honda-cb-hornet-160r-vs-unicorn-160.html" class="invisible">
+                                    <img src="img/banner.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Juventus</a></h3>
+                                    <p class="price">Rs 10,00,000</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/slide01.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/slide01.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/slide01.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="http://bmw-motorrad.in/">BMW X Series</a></h3>
+                                    <p class="price">Rs.8,00,000</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                    </div>
+                    <!-- /.product-slider -->
+                </div>
+                <!-- /.container -->
+
+            </div>
+            <!-- /#hot -->
+
+            <!-- *** HOT END *** -->
+
+            <!-- *** GET INSPIRED ***
+ _________________________________________________________ -->
+            <div class="container" data-animate="fadeInUpBig">
+                <div class="col-md-12">
+                    <div class="box slideshow">
+                        <h3>Get Inspired</h3>
+                        <p class="lead">Get the inspiration from worlds best brands</p>
+                        <div id="get-inspired" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/pic02.jpg" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/pic03.jpg" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/pic04.jpg" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- *** GET INSPIRED END *** -->
+
+            <!-- *** BLOG HOMEPAGE ***
+ _________________________________________________________ -->
+
+            <div class="box text-center" data-animate="fadeInUp">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="text-uppercase">From our blog</h3>
+
+                        <p class="lead">upcoming bikes <a href="blog.html">Check our blog!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="col-md-12" data-animate="fadeInUp">
+
+                    <div id="blog-homepage" class="row">
+                        <div class="col-sm-6">
+                            <div class="post">
+                                <h4><a href="post.html">Great Thoughts </a></h4>
+                                <p class="author-category">By <a href="#">Valentino Rossi</a> in <a href="">On bike riding</a>
+                                </p>
+                                <hr>
+                                <p class="intro">The most important thing is to have a good relationship with the bike... you have to understand what she wants. I think of a motorcycle as a woman, and I know that sounds silly, but it's true.</p>
+                                <p class="read-more"><a href="https://www.brainyquote.com/quotes/valentino_rossi_555353" class="btn btn-primary">Continue reading</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="post">
+                                <h4><a href="post.html">Great Thoughts</a></h4>
+                                <p class="author-category">By <a href="#">Valentino Rossi</a> in <a href=""></a>
+                                </p>
+                                <hr>
+                                <p class="intro">Riding a race bike is an art - a thing that you do because you feel something inside. .</p>
+                                <p class="read-more"><a href="https://www.brainyquote.com/quotes/valentino_rossi_301237" class="btn btn-primary">Continue reading</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /#blog-homepage -->
+                </div>
+            </div>
+            <!-- /.container -->
+
+            <!-- *** BLOG HOMEPAGE END *** -->
+
+
+        </div>
+        <!-- /#content -->
+
+        <!-- *** FOOTER ***
+ _________________________________________________________ -->
+        <div id="footer" data-animate="fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Pages</h4>
+
+                        <ul>
+                            <li><a href="text.html">About us</a>
+                            </li>
+                            <li><a href="text.html">Terms and conditions</a>
+                            </li>
+                            <li><a href="faq.html">FAQ</a>
+                            </li>
+                            <li><a href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <h4>User section</h4>
+
+                        <ul>
+                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                            </li>
+                            <li><a href="register.html">Regiter</a>
+                            </li>
+                        </ul>
+
+                        <hr class="hidden-md hidden-lg hidden-sm">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Top categories</h4>
+
+                        <h5>Bikes</h5>
+
+                        <ul>
+                            <li><a href="category.html">Honda</a>
+                            </li>
+                            <li><a href="category.html">Hero</a>
+                            </li>
+                            <li><a href="category.html">Bajaj</a>
+                            </li>
+                        </ul>
+
+                        <h5>Scooter</h5>
+                        <ul>
+                            <li><a href="category.html">Honda</a>
+                            </li>
+                            <li><a href="category.html">Yamaha</a>
+                            </li>
+                            <li><a href="category.html">Hero</a>
+                            </li>
+                            <li><a href="category.html">Tvs</a>
+                            </li>
+                        </ul>
+
+                        <hr class="hidden-md hidden-lg">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Where to find us</h4>
+
+                        <p><strong>Vikom.LTD.</strong>
+                            <br>13/25 SONA UDYOG
+                            <br>GOREGAON
+                            <br>MUMBAI
+                            <br>INDIA
+                            <br>
+                            <strong>Great Britain</strong>
+                        </p>
+
+                        <a href="contact.html">Go to contact page</a>
+
+                        <hr class="hidden-md hidden-lg">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Get the news</h4>
+
+                        <p class="text-muted">Life is one big road with lots of signs. So when you riding through the ruts, don't complicate your mind. Flee from hate, mischief and jealousy. Don't bury your thoughts, put your vision to reality. Wake Up and Live! Bob Marley.</p>
+
+                        <form>
+                            <div class="input-group">
+
+                                <input type="text" class="form-control">
+
+                                <span class="input-group-btn">
+
+			    <button class="btn btn-default" type="button">Subscribe!</button>
+
+			</span>
+
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+
+                        <hr>
+
+                        <h4>Stay in touch</h4>
+
+                        <p class="social">
+                            <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                        </p>
+
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#footer -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">© 2018 VIKRANT OMKAR AMEY PRODUCTIONS</p>
+
+                </div>
+                
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+
+</body>
+
+</html>
